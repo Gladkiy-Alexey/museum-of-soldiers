@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Message } from '@museum-of-soldiers/api-interfaces';
 
 @Component({
-  selector: 'museum-of-soldiers-root',
+  selector: 'musosol-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

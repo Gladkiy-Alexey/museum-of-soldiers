@@ -72,7 +72,7 @@
       "projectType": "application",
       "root": "apps/mus-o-sol",
       "sourceRoot": "apps/mus-o-sol/src",
-      "prefix": "museum-of-soldiers",
+      "prefix": "musosol",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
