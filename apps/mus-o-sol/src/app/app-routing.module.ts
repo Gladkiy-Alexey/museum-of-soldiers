@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
-// import { TodoListComponent } from './todo-list/todo-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
@@ -11,7 +10,10 @@ const routes: Routes = [
     component: HomeComponent,
     pathMatch: 'full'
   },
-  // { path: 'todo-list', component: TodoListComponent },
+  {
+    path: 'todo-list',
+    loadChildren: () => import('./todo-list/todo-list.module').then(m => m.TodoListModule),
+  },
   { path: '**', component: PageNotFoundComponent },
 ];
 
