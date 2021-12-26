@@ -8,6 +8,7 @@
     "start:api": "ng serve api",
     "start:front": "nx serve",
     "build": "nx build",
+    "lint:style": "npx sass-lint -c .sass-lint.yml 'apps/**/*.scss' -v -q",
     "test": "nx test"
   },
   "private": true,
