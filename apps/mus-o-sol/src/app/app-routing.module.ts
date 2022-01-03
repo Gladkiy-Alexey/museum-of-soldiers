@@ -10,10 +10,6 @@ const routes: Routes = [
     component: HomeComponent,
     pathMatch: 'full'
   },
-  {
-    path: 'todo-list',
-    loadChildren: () => import('./todo-list/todo-list.module').then(m => m.TodoListModule),
-  },
   { path: '**', component: PageNotFoundComponent },
 ];
 
