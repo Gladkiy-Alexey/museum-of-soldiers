@@ -66,11 +66,11 @@
     "jest": "27.5.1",
     "jest-preset-angular": "11.1.1",
     "lint-staged": "^12.1.4",
-    "nodemon": "^2.0.15",
+    "nodemon": "^2.0.16",
+    "nx": "14.1.4",
     "prettier": "2.6.2",
     "sass-lint": "^1.13.1",
     "ts-jest": "27.1.4",
-    "typescript": "4.6.4",
-    "nx": "14.1.4"
+    "typescript": "4.6.4"
   }
 }
