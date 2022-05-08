@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { AboutCollectionComponent } from './about-collection/about-collection.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
@@ -25,11 +28,9 @@ const routes: Routes = [
     loadChildren: () =>
       import('./museum/museum.module').then((m) => m.MuseumModule),
   },
-  {
-    path: 'other',
-    loadChildren: () =>
-      import('./other/other.module').then((m) => m.OtherModule),
-  },
+  { path: 'about-me', component: AboutMeComponent },
+  { path: 'about-collection', component: AboutCollectionComponent },
+  { path: 'feedback', component: FeedbackComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
