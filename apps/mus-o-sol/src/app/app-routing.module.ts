@@ -25,6 +25,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./museum/museum.module').then((m) => m.MuseumModule),
   },
+  {
+    path: 'other',
+    loadChildren: () =>
+      import('./other/other.module').then((m) => m.OtherModule),
+  },
   { path: '**', component: PageNotFoundComponent },
 ];
 
