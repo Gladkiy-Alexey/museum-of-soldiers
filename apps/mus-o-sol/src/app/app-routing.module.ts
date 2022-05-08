@@ -20,6 +20,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./catalog/catalog.module').then((m) => m.CatalogModule),
   },
+  {
+    path: 'museum',
+    loadChildren: () =>
+      import('./museum/museum.module').then((m) => m.MuseumModule),
+  },
   { path: '**', component: PageNotFoundComponent },
 ];
 
