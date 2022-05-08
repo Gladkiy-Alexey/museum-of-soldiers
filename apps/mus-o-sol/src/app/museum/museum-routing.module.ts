@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MuseumComponent } from './museum.component';
+import { MuseumComponent } from './museum/museum.component';
 
 const routes: Routes = [{ path: '', component: MuseumComponent }];
 
