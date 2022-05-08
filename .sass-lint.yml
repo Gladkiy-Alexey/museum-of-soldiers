@@ -4,8 +4,7 @@ options:
 files:
   include: 'client/**/*.s+(a|c)ss'
   ignore:
-    - 'client/styles/old_styles/**.*'
-    - 'client/styles/fonts/**.*'
+    - 'apps/mus-o-sol/src/styles.scss'
 cache-config: true
 rules:
   # Extends
