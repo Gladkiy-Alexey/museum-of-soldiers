@@ -8,12 +8,16 @@
       "architect": {
         "build": {
           "builder": "@nrwl/node:webpack",
-          "outputs": ["{options.outputPath}"],
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "outputPath": "dist/apps/api",
             "main": "apps/api/src/main.ts",
             "tsConfig": "apps/api/tsconfig.app.json",
-            "assets": ["apps/api/src/assets"]
+            "assets": [
+              "apps/api/src/assets"
+            ]
           },
           "configurations": {
             "production": {
@@ -37,14 +41,20 @@
         },
         "lint": {
           "builder": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/api/**/*.ts"]
+            "lintFilePatterns": [
+              "apps/api/**/*.ts"
+            ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/api"],
+          "outputs": [
+            "coverage/apps/api"
+          ],
           "options": {
             "jestConfig": "apps/api/jest.config.ts",
             "passWithNoTests": true
@@ -60,9 +70,13 @@
       "architect": {
         "lint": {
           "builder": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["libs/api-interfaces/**/*.ts"]
+            "lintFilePatterns": [
+              "libs/api-interfaces/**/*.ts"
+            ]
           }
         }
       },
@@ -76,7 +90,9 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
-          "outputs": ["{options.outputPath}"],
+          "outputs": [
+            "{options.outputPath}"
+          ],
           "options": {
             "outputPath": "dist/apps/mus-o-sol",
             "index": "apps/mus-o-sol/src/index.html",
@@ -88,7 +104,9 @@
               "apps/mus-o-sol/src/favicon.ico",
               "apps/mus-o-sol/src/assets"
             ],
-            "styles": ["apps/mus-o-sol/src/styles.scss"],
+            "styles": [
+              "apps/mus-o-sol/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -156,7 +174,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/mus-o-sol"],
+          "outputs": [
+            "coverage/apps/mus-o-sol"
+          ],
           "options": {
             "jestConfig": "apps/mus-o-sol/jest.config.ts",
             "passWithNoTests": true
@@ -184,14 +204,20 @@
         },
         "lint": {
           "builder": "@nrwl/linter:eslint",
-          "outputs": ["{options.outputFile}"],
+          "outputs": [
+            "{options.outputFile}"
+          ],
           "options": {
-            "lintFilePatterns": ["apps/mus-o-sol-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/mus-o-sol-e2e/**/*.{js,ts}"
+            ]
           }
         }
       },
       "tags": [],
-      "implicitDependencies": ["mus-o-sol"]
+      "implicitDependencies": [
+        "mus-o-sol"
+      ]
     }
   }
 }
