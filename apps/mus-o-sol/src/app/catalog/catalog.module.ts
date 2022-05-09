@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { SharedModule } from '../shared/shared.module';
 import { CatalogRoutingModule } from './catalog-routing.module';
 import { CatalogComponent } from './catalog/catalog.component';
 import { CategoryComponent } from './category/category.component';
@@ -14,6 +15,10 @@ import { SearchComponent } from './search/search.component';
     ExhibitComponent,
     SearchComponent,
   ],
-  imports: [CommonModule, CatalogRoutingModule],
+  imports: [
+    CommonModule,
+    SharedModule,
+    CatalogRoutingModule,
+  ],
 })
 export class CatalogModule {}
